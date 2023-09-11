@@ -2,11 +2,13 @@ from enum import Enum
 
 
 class PizzaSize(Enum):
+    """ Готовые размеры для пиццы """
     L = 0
     XL = 1
-
+    
 
 class Pizza:
+    """ Стандартный класс для пиццы """
     def __init__(self, size: str) -> None:
         self._size = size
         ingredients = {}
@@ -49,7 +51,7 @@ class Pizza:
 
 
 class Margherita(Pizza):
-
+    """ Пицца с сырком """
     def __init__(self, size: str) -> None:
         super().__init__(size)
         if self._size == "L":
@@ -59,7 +61,7 @@ class Margherita(Pizza):
 
 
 class Pepperoni(Pizza):
-
+    """ Пицца с колбаской """ 
     def __init__(self, size: str) -> None:
         super().__init__(size)
         if self._size == "L":
@@ -69,7 +71,7 @@ class Pepperoni(Pizza):
 
 
 class Hawaiian(Pizza):
-
+    """ Пицца с ананасами, звучит не очень """
     def __init__(self, size: str) -> None:
         super().__init__(size)
         if self._size == "L":
