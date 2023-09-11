@@ -29,3 +29,7 @@ If you want to take pizza by yourself:
 # mypy, pep8, flake8
 Also I used this packages to make my code better and reformed it.  
 --Max-line-length was 120     
+
+
+# Tests
+I used pytest to test some functions and methods in my code
